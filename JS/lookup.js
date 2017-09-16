@@ -8,7 +8,7 @@ function createAccontingHTMLString(date, kind, option, amount) {
 }
 
 $("#Searchbtn").click(function() {
-    $("#creattable").find("tbody").remove();
+    $("#creattable").find("tr").remove();
     if ($('input[name=timerange]:checked').val() == "month") {
         var date = new Date();
         var year = date.getUTCFullYear();
